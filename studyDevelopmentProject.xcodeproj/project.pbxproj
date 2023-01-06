@@ -13,6 +13,7 @@
 		9CE7434E2964FA7F00C23CD1 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9CE743462964FA7400C23CD1 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9CE743522964FAA400C23CD1 /* AddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE743512964FAA400C23CD1 /* AddAccount.swift */; };
 		9CE743542964FACA00C23CD1 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE743532964FACA00C23CD1 /* AccountModel.swift */; };
+		9CE743562968EB8900C23CD1 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE743552968EB8900C23CD1 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		9CE743462964FA7400C23CD1 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CE743512964FAA400C23CD1 /* AddAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccount.swift; sourceTree = "<group>"; };
 		9CE743532964FACA00C23CD1 /* AccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
+		9CE743552968EB8900C23CD1 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 			children = (
 				9CE743512964FAA400C23CD1 /* AddAccount.swift */,
 				9CE743532964FACA00C23CD1 /* AccountModel.swift */,
+				9CE743552968EB8900C23CD1 /* Model.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CE743562968EB8900C23CD1 /* Model.swift in Sources */,
 				9CE743522964FAA400C23CD1 /* AddAccount.swift in Sources */,
 				9CE743542964FACA00C23CD1 /* AccountModel.swift in Sources */,
 			);
