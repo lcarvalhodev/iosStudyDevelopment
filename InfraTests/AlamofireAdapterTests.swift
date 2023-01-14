@@ -6,8 +6,9 @@ class AlamofireAdapter {
     init(session: Session = .default){
         self.session = session
     }
-    func post(to url: URL){
-        session.request(url, method: .post).resume()
+    func post(to url: URL, with data: Data?){
+        let json = try? JSONSerialization.jsonObject(with: data!,options: .fragmentsAllowed) as? [String: Any]
+        session.request(url, method: .post, parameters: json, encoding: JSONEncoding.default).resume()
     }
 }
 
@@ -18,11 +19,12 @@ final class AlamofireAdapterTests: XCTestCase {
         configuration.protocolClasses = [UrlProtocolStub.self]
         let session = Session(configuration: configuration)
         let sut = AlamofireAdapter(session: session)
-        sut.post(to: url)
+        sut.post(to: url, with: makeValidData())
         let exp = expectation(description: "waiting")
         UrlProtocolStub.observeRequest {request in
             XCTAssertEqual(url, request.url)
             XCTAssertEqual("POST", request.httpMethod)
+            XCTAssertNotNil(request.httpBodyStream)
             exp.fulfill()
         }
         wait(for: [exp], timeout: 1)
