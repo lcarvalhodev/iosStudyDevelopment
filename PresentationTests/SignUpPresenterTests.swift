@@ -7,22 +7,30 @@ class SignUpPresenter {
     init(alertView: AlertView) {
         self.alertView = alertView
     }
+    
     func signUp(viewModel: SignUpViewModel) {
+        if let message = validate(viewModel: viewModel){
+            alertView.showMessage(viewModel: AlertViewModel(title: "Validation fails", message: message))
+        }
+    }
+    
+    private func validate(viewModel: SignUpViewModel) -> String? {
         if(viewModel.name == nil || viewModel.name!.isEmpty){
-            alertView.showMessage(viewModel: AlertViewModel(title: "Validation fails", message: "Field name should be provided"))
+           return "Field name should be provided"
         }
         
         else if(viewModel.email == nil || viewModel.email!.isEmpty){
-            alertView.showMessage(viewModel: AlertViewModel(title: "Validation fails", message: "Field email should be provided"))
+            return "Field email should be provided"
         }
         
         else if(viewModel.password == nil || viewModel.password!.isEmpty){
-            alertView.showMessage(viewModel: AlertViewModel(title: "Validation fails", message: "Field password should be provided"))
+            return "Field password should be provided"
         }
         
         else if(viewModel.passwordConfirmation == nil || viewModel.passwordConfirmation!.isEmpty){
-            alertView.showMessage(viewModel: AlertViewModel(title: "Validation fails", message: "Field password confirmation should be provided"))
+            return "Field password confirmation should be provided"
         }
+        return nil
     }
 }
 
