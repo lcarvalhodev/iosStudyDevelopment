@@ -30,6 +30,9 @@ public final class SignUpPresenter {
         else if(viewModel.passwordConfirmation == nil || viewModel.passwordConfirmation!.isEmpty){
             return "Field password confirmation should be provided"
         }
+        else if(viewModel.password != viewModel.passwordConfirmation){
+            return "Field password confirmation should be equal to field password"
+        }
         return nil
     }
 }
