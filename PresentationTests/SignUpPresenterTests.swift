@@ -11,6 +11,10 @@ class SignUpPresenter {
         if(viewModel.name == nil || viewModel.name!.isEmpty){
             alertView.showMessage(viewModel: AlertViewModel(title: "Validation fails", message: "Field name should be provided"))
         }
+        
+        else if(viewModel.email == nil || viewModel.email!.isEmpty){
+            alertView.showMessage(viewModel: AlertViewModel(title: "Validation fails", message: "Field email should be provided"))
+        }
     }
 }
 
@@ -37,6 +41,13 @@ final class SignUpPresenterTests: XCTestCase {
         let signUpViewModel = SignUpViewModel(email: "any_email", password: "any_password", passwordConfirmation: "any_password")
         sut.signUp(viewModel: signUpViewModel)
         XCTAssertEqual(alertViewSpy.viewModel, AlertViewModel(title: "Validation fails", message: "Field name should be provided"))
+    }
+    
+    func test_signUp_should_show_error_message_if_email_is_not_provided() throws {
+        let (sut, alertViewSpy) = makeSut()
+        let signUpViewModel = SignUpViewModel(name: "any_name", password: "any_password", passwordConfirmation: "any_password")
+        sut.signUp(viewModel: signUpViewModel)
+        XCTAssertEqual(alertViewSpy.viewModel, AlertViewModel(title: "Validation fails", message: "Field email should be provided"))
     }
 }
 
