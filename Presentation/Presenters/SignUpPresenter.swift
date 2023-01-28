@@ -30,10 +30,10 @@ public final class SignUpPresenter {
             return "Field password confirmation should be provided"
         }
         else if(viewModel.password != viewModel.passwordConfirmation){
-            return "Field password confirmation should be equal to field password"
+            return "Field password confirmation is invalid"
         }
         else if(!emailValidator.isValid(email: viewModel.email!)){
-            return "Invalid email"
+            return "Field email is invalid"
         }
         return nil
     }
