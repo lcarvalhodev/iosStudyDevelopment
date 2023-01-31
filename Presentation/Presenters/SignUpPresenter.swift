@@ -21,7 +21,7 @@ public final class SignUpPresenter {
             let addAccountModel = AddAccountModel(name: viewModel.name!, email: viewModel.email!, password: viewModel.password!, confirmPassword: viewModel.passwordConfirmation!)
             addAccount.add(addAccountModel: addAccountModel) { result in
                 switch result {
-                case .failure: self.alertView.showMessage(viewModel: AlertViewModel(title: "Error ", message: "Unexpected error. Try again."))
+                case .failure: self.alertView.showMessage(viewModel: AlertViewModel(title: "Error", message: "Unexpected error. Try again."))
                 case .success: break
                 }
             }
