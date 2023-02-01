@@ -28,6 +28,7 @@ public final class SignUpPresenter {
                     case .failure: self.alertView.showMessage(viewModel: AlertViewModel(title: "Error", message: "Unexpected error. Try again."))
                     case .success: break
                 }
+                self.loadingView.display(viewModel: LoadingViewModel(isLoading: false))
             }
         }
     }
