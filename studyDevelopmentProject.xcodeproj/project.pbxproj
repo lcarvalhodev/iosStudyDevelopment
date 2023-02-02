@@ -22,6 +22,7 @@
 		9C3F1D902988947C00219B3C /* TextExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE743692970C5FA00C23CD1 /* TextExtensions.swift */; };
 		9C3F1D922989823D00219B3C /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3F1D912989823D00219B3C /* LoadingView.swift */; };
 		9C3F1D96298C75CE00219B3C /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3F1D95298C75CE00219B3C /* SignUpViewModel.swift */; };
+		9C3F1D98298C762F00219B3C /* SignUpMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3F1D97298C762F00219B3C /* SignUpMapper.swift */; };
 		9CE7432E2964F67C00C23CD1 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CE743262964F67C00C23CD1 /* Data.framework */; };
 		9CE743332964F67C00C23CD1 /* RemoteAddAccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE743322964F67C00C23CD1 /* RemoteAddAccountTests.swift */; };
 		9CE7434D2964FA7F00C23CD1 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CE743462964FA7400C23CD1 /* Domain.framework */; };
@@ -162,6 +163,7 @@
 		9C3F1D8D2984867B00219B3C /* EmailValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
 		9C3F1D912989823D00219B3C /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		9C3F1D95298C75CE00219B3C /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		9C3F1D97298C762F00219B3C /* SignUpMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpMapper.swift; sourceTree = "<group>"; };
 		9CE743262964F67C00C23CD1 /* Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CE7432D2964F67C00C23CD1 /* DataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CE743322964F67C00C23CD1 /* RemoteAddAccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAddAccountTests.swift; sourceTree = "<group>"; };
@@ -332,6 +334,7 @@
 			children = (
 				9C3F1D802983443100219B3C /* SignUpPresenter.swift */,
 				9C3F1D95298C75CE00219B3C /* SignUpViewModel.swift */,
+				9C3F1D97298C762F00219B3C /* SignUpMapper.swift */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -825,6 +828,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C3F1D98298C762F00219B3C /* SignUpMapper.swift in Sources */,
 				9C3F1D812983443100219B3C /* SignUpPresenter.swift in Sources */,
 				9C3F1D922989823D00219B3C /* LoadingView.swift in Sources */,
 				9C3F1D96298C75CE00219B3C /* SignUpViewModel.swift in Sources */,
