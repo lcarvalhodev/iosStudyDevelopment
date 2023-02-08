@@ -211,7 +211,7 @@
 		9C3F1DB4298DBE8400219B3C /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C3F1DB9298DBE8400219B3C /* SignUpViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewControllerTests.swift; sourceTree = "<group>"; };
 		9C3F1DC7298DDDDA00219B3C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		9C3F1DC9298DDE2100219B3C /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = SignUp.storyboard; path = UI/SignUp.storyboard; sourceTree = SOURCE_ROOT; };
+		9C3F1DC9298DDE2100219B3C /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = SignUp.storyboard; path = UI/Scenes/SignUp/SignUp.storyboard; sourceTree = SOURCE_ROOT; };
 		9CE743262964F67C00C23CD1 /* Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CE7432D2964F67C00C23CD1 /* DataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CE743322964F67C00C23CD1 /* RemoteAddAccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAddAccountTests.swift; sourceTree = "<group>"; };
@@ -451,8 +451,7 @@
 		9C3F1DAE298DBE8400219B3C /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				9C3F1DC7298DDDDA00219B3C /* SignUpViewController.swift */,
-				9C3F1DC9298DDE2100219B3C /* SignUp.storyboard */,
+				9C817A372994256700654E56 /* Scenes */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -460,9 +459,42 @@
 		9C3F1DB8298DBE8400219B3C /* UITests */ = {
 			isa = PBXGroup;
 			children = (
-				9C3F1DB9298DBE8400219B3C /* SignUpViewControllerTests.swift */,
+				9C817A39299425C800654E56 /* Scenes */,
 			);
 			path = UITests;
+			sourceTree = "<group>";
+		};
+		9C817A352994248800654E56 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				9C3F1DC7298DDDDA00219B3C /* SignUpViewController.swift */,
+				9C3F1DC9298DDE2100219B3C /* SignUp.storyboard */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		9C817A362994249900654E56 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				9C3F1DB9298DBE8400219B3C /* SignUpViewControllerTests.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		9C817A372994256700654E56 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				9C817A352994248800654E56 /* SignUp */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		9C817A39299425C800654E56 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				9C817A362994249900654E56 /* SignUp */,
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 		9CE742F92963B98D00C23CD1 = {
