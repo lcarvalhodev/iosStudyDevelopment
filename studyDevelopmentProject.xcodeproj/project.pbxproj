@@ -36,6 +36,7 @@
 		9C3F1DCA298DDE2100219B3C /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C3F1DC9298DDE2100219B3C /* SignUp.storyboard */; };
 		9C3F1DCB298EC4F500219B3C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3F1DC7298DDDDA00219B3C /* SignUpViewController.swift */; };
 		9C3F1DCF298ECE1100219B3C /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C3F1DC9298DDE2100219B3C /* SignUp.storyboard */; };
+		9C817A3C2994261A00654E56 /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C817A3B2994261900654E56 /* TestExtensions.swift */; };
 		9CE7432E2964F67C00C23CD1 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CE743262964F67C00C23CD1 /* Data.framework */; };
 		9CE743332964F67C00C23CD1 /* RemoteAddAccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE743322964F67C00C23CD1 /* RemoteAddAccountTests.swift */; };
 		9CE7434D2964FA7F00C23CD1 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CE743462964FA7400C23CD1 /* Domain.framework */; };
@@ -212,6 +213,7 @@
 		9C3F1DB9298DBE8400219B3C /* SignUpViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewControllerTests.swift; sourceTree = "<group>"; };
 		9C3F1DC7298DDDDA00219B3C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		9C3F1DC9298DDE2100219B3C /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = SignUp.storyboard; path = UI/Scenes/SignUp/SignUp.storyboard; sourceTree = SOURCE_ROOT; };
+		9C817A3B2994261900654E56 /* TestExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestExtensions.swift; sourceTree = "<group>"; };
 		9CE743262964F67C00C23CD1 /* Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CE7432D2964F67C00C23CD1 /* DataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CE743322964F67C00C23CD1 /* RemoteAddAccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAddAccountTests.swift; sourceTree = "<group>"; };
@@ -459,6 +461,7 @@
 		9C3F1DB8298DBE8400219B3C /* UITests */ = {
 			isa = PBXGroup;
 			children = (
+				9C817A3A2994260200654E56 /* Helpers */,
 				9C817A39299425C800654E56 /* Scenes */,
 			);
 			path = UITests;
@@ -495,6 +498,14 @@
 				9C817A362994249900654E56 /* SignUp */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		9C817A3A2994260200654E56 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9C817A3B2994261900654E56 /* TestExtensions.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		9CE742F92963B98D00C23CD1 = {
@@ -1097,6 +1108,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C3F1DCB298EC4F500219B3C /* SignUpViewController.swift in Sources */,
+				9C817A3C2994261A00654E56 /* TestExtensions.swift in Sources */,
 				9C3F1DBA298DBE8400219B3C /* SignUpViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
