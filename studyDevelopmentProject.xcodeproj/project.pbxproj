@@ -63,7 +63,9 @@
 		9C817AAA2998A59D00654E56 /* UI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9C3F1DAD298DBE8400219B3C /* UI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9C817AAD2998A5A100654E56 /* Validation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C817A482997CF2C00654E56 /* Validation.framework */; };
 		9C817AAE2998A5A200654E56 /* Validation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9C817A482997CF2C00654E56 /* Validation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9C817AB32998A61D00654E56 /* SignUpFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C817AB22998A61D00654E56 /* SignUpFactory.swift */; };
+		9C817AB32998A61D00654E56 /* ControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C817AB22998A61D00654E56 /* ControllerFactory.swift */; };
+		9C817AC4299AB91A00654E56 /* UseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C817AC3299AB91A00654E56 /* UseCaseFactory.swift */; };
+		9C817AC7299AB9A000654E56 /* SignUpComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C817AC6299AB9A000654E56 /* SignUpComposer.swift */; };
 		9CE7432E2964F67C00C23CD1 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CE743262964F67C00C23CD1 /* Data.framework */; };
 		9CE743332964F67C00C23CD1 /* RemoteAddAccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE743322964F67C00C23CD1 /* RemoteAddAccountTests.swift */; };
 		9CE7434D2964FA7F00C23CD1 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CE743462964FA7400C23CD1 /* Domain.framework */; };
@@ -354,7 +356,9 @@
 		9C817A872997E65800654E56 /* MainUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MainUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C817A8B2997E65800654E56 /* MainUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainUITests.swift; sourceTree = "<group>"; };
 		9C817A8D2997E65800654E56 /* MainUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		9C817AB22998A61D00654E56 /* SignUpFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFactory.swift; sourceTree = "<group>"; };
+		9C817AB22998A61D00654E56 /* ControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerFactory.swift; sourceTree = "<group>"; };
+		9C817AC3299AB91A00654E56 /* UseCaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseFactory.swift; sourceTree = "<group>"; };
+		9C817AC6299AB9A000654E56 /* SignUpComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpComposer.swift; sourceTree = "<group>"; };
 		9CE743262964F67C00C23CD1 /* Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CE7432D2964F67C00C23CD1 /* DataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CE743322964F67C00C23CD1 /* RemoteAddAccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAddAccountTests.swift; sourceTree = "<group>"; };
@@ -721,6 +725,7 @@
 		9C817A692997E65500654E56 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				9C817AC5299AB98A00654E56 /* Composers */,
 				9C817AB12998A60C00654E56 /* Factories */,
 				9C817A6A2997E65500654E56 /* AppDelegate.swift */,
 				9C817A6C2997E65500654E56 /* SceneDelegate.swift */,
@@ -750,9 +755,18 @@
 		9C817AB12998A60C00654E56 /* Factories */ = {
 			isa = PBXGroup;
 			children = (
-				9C817AB22998A61D00654E56 /* SignUpFactory.swift */,
+				9C817AB22998A61D00654E56 /* ControllerFactory.swift */,
+				9C817AC3299AB91A00654E56 /* UseCaseFactory.swift */,
 			);
 			path = Factories;
+			sourceTree = "<group>";
+		};
+		9C817AC5299AB98A00654E56 /* Composers */ = {
+			isa = PBXGroup;
+			children = (
+				9C817AC6299AB9A000654E56 /* SignUpComposer.swift */,
+			);
+			path = Composers;
 			sourceTree = "<group>";
 		};
 		9CE742F92963B98D00C23CD1 = {
@@ -1558,9 +1572,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C817AC4299AB91A00654E56 /* UseCaseFactory.swift in Sources */,
 				9C817A6B2997E65500654E56 /* AppDelegate.swift in Sources */,
-				9C817AB32998A61D00654E56 /* SignUpFactory.swift in Sources */,
+				9C817AB32998A61D00654E56 /* ControllerFactory.swift in Sources */,
 				9C817A6D2997E65500654E56 /* SceneDelegate.swift in Sources */,
+				9C817AC7299AB9A000654E56 /* SignUpComposer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2108,13 +2124,14 @@
 				INFOPLIST_FILE = Main/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACH_O_TYPE = mh_execute;
 				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SignUp.storyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -2136,13 +2153,14 @@
 				INFOPLIST_FILE = Main/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACH_O_TYPE = mh_execute;
 				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SignUp.storyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
