@@ -69,6 +69,7 @@
 		9C817AC9299B06BF00654E56 /* SignUpIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C817AC8299B06BF00654E56 /* SignUpIntegrationTests.swift */; };
 		9C817ACA299B073A00654E56 /* AddAccountSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3F1DA1298C8D4F00219B3C /* AddAccountSpy.swift */; };
 		9C817ACB299B079C00654E56 /* TextExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE743692970C5FA00C23CD1 /* TextExtensions.swift */; };
+		9C817ACE299B0A9300654E56 /* WeakVarProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C817ACD299B0A9300654E56 /* WeakVarProxy.swift */; };
 		9CE7432E2964F67C00C23CD1 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CE743262964F67C00C23CD1 /* Data.framework */; };
 		9CE743332964F67C00C23CD1 /* RemoteAddAccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE743322964F67C00C23CD1 /* RemoteAddAccountTests.swift */; };
 		9CE7434D2964FA7F00C23CD1 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CE743462964FA7400C23CD1 /* Domain.framework */; };
@@ -363,6 +364,7 @@
 		9C817AC3299AB91A00654E56 /* UseCaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseFactory.swift; sourceTree = "<group>"; };
 		9C817AC6299AB9A000654E56 /* SignUpComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpComposer.swift; sourceTree = "<group>"; };
 		9C817AC8299B06BF00654E56 /* SignUpIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpIntegrationTests.swift; sourceTree = "<group>"; };
+		9C817ACD299B0A9300654E56 /* WeakVarProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakVarProxy.swift; sourceTree = "<group>"; };
 		9CE743262964F67C00C23CD1 /* Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CE7432D2964F67C00C23CD1 /* DataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CE743322964F67C00C23CD1 /* RemoteAddAccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAddAccountTests.swift; sourceTree = "<group>"; };
@@ -729,6 +731,7 @@
 		9C817A692997E65500654E56 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				9C817ACC299B0A8200654E56 /* Proxys */,
 				9C817AC5299AB98A00654E56 /* Composers */,
 				9C817AB12998A60C00654E56 /* Factories */,
 				9C817A6A2997E65500654E56 /* AppDelegate.swift */,
@@ -772,6 +775,14 @@
 				9C817AC6299AB9A000654E56 /* SignUpComposer.swift */,
 			);
 			path = Composers;
+			sourceTree = "<group>";
+		};
+		9C817ACC299B0A8200654E56 /* Proxys */ = {
+			isa = PBXGroup;
+			children = (
+				9C817ACD299B0A9300654E56 /* WeakVarProxy.swift */,
+			);
+			path = Proxys;
 			sourceTree = "<group>";
 		};
 		9CE742F92963B98D00C23CD1 = {
@@ -1582,6 +1593,7 @@
 				9C817A6B2997E65500654E56 /* AppDelegate.swift in Sources */,
 				9C817AB32998A61D00654E56 /* ControllerFactory.swift in Sources */,
 				9C817A6D2997E65500654E56 /* SceneDelegate.swift in Sources */,
+				9C817ACE299B0A9300654E56 /* WeakVarProxy.swift in Sources */,
 				9C817AC7299AB9A000654E56 /* SignUpComposer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
