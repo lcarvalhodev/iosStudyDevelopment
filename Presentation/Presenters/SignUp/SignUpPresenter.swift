@@ -4,19 +4,19 @@ import Domain
 public final class SignUpPresenter {
     
     private let alertView: AlertView
-    private let emailValidator: EmailValidator
     private let addAccount: AddAccount
     private let loadingView: LoadingView
+    private let validation: Validation
     
-    public init(alertView: AlertView, emailValidator: EmailValidator, addAccount: AddAccount, loadingView: LoadingView) {
-        self.emailValidator = emailValidator
+    public init(alertView: AlertView, addAccount: AddAccount, loadingView: LoadingView, validation: Validation) {
         self.alertView = alertView
         self.addAccount = addAccount
         self.loadingView = loadingView
+        self.validation = validation
     }
     
     public func signUp(viewModel: SignUpViewModel) {
-        if let message = validate(viewModel: viewModel){
+        if let message = validation.validate(data: viewModel.toJson()) {
             alertView.showMessage(viewModel: AlertViewModel(title: "Validation fails", message: message))
         }
         else {
@@ -30,27 +30,5 @@ public final class SignUpPresenter {
                 }
             }
         }
-    }
-    
-    private func validate(viewModel: SignUpViewModel) -> String? {
-        if(viewModel.name == nil || viewModel.name!.isEmpty){
-           return "Field name should be provided"
-        }
-        else if(viewModel.email == nil || viewModel.email!.isEmpty){
-            return "Field email should be provided"
-        }
-        else if(viewModel.password == nil || viewModel.password!.isEmpty){
-            return "Field password should be provided"
-        }
-        else if(viewModel.passwordConfirmation == nil || viewModel.passwordConfirmation!.isEmpty){
-            return "Field password confirmation should be provided"
-        }
-        else if(viewModel.password != viewModel.passwordConfirmation){
-            return "Field password confirmation is invalid"
-        }
-        else if(!emailValidator.isValid(email: viewModel.email!)){
-            return "Field email is invalid"
-        }
-        return nil
     }
 }
