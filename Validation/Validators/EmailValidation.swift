@@ -1,7 +1,10 @@
 import Foundation
 import Presentation
 
-public final class EmailValidation: Validation {
+public final class EmailValidation: Validation, Equatable{
+    public static func == (lhs: EmailValidation, rhs: EmailValidation) -> Bool {
+        lhs.fieldLabel == rhs.fieldLabel && lhs.fieldName == rhs.fieldName
+    }
     
     private let fieldName: String
     private let fieldLabel: String

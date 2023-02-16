@@ -1,7 +1,10 @@
 import Foundation
 import Presentation
 
-public final class CompareFieldsValidation: Validation {
+public final class CompareFieldsValidation: Validation, Equatable {
+    public static func == (lhs: CompareFieldsValidation, rhs: CompareFieldsValidation) -> Bool {
+        lhs.fieldLabel == rhs.fieldLabel && lhs.fieldName == rhs.fieldName && lhs.fieldNameToCompare == rhs.fieldNameToCompare
+    }
     
     private let fieldName: String
     private let fieldNameToCompare: String
