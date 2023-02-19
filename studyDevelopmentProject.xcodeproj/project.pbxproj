@@ -90,6 +90,11 @@
 		9C817B0229A2AA0300654E56 /* ApiUrlFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C817B0129A2AA0300654E56 /* ApiUrlFactory.swift */; };
 		9C817B0529A2B1F700654E56 /* AlamofireAdapterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C817B0429A2B1F700654E56 /* AlamofireAdapterFactory.swift */; };
 		9C817B0929A2B32A00654E56 /* EmailValidatorAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C817B0829A2B32A00654E56 /* EmailValidatorAdapter.swift */; };
+		9C817B0C29A2D4E800654E56 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C817B0B29A2D4E800654E56 /* Images.xcassets */; };
+		9C817B0E29A2DB0900654E56 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C817B0D29A2DB0900654E56 /* UIColorExtension.swift */; };
+		9C817B1029A2DB6200654E56 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C817B0F29A2DB6200654E56 /* Color.swift */; };
+		9C817B1329A2DC7800654E56 /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C817B1229A2DC7800654E56 /* RoundedTextField.swift */; };
+		9C817B1529A2DE6C00654E56 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C817B1429A2DE6C00654E56 /* NavigationController.swift */; };
 		9CE7432E2964F67C00C23CD1 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CE743262964F67C00C23CD1 /* Data.framework */; };
 		9CE743332964F67C00C23CD1 /* RemoteAddAccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE743322964F67C00C23CD1 /* RemoteAddAccountTests.swift */; };
 		9CE7434D2964FA7F00C23CD1 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CE743462964FA7400C23CD1 /* Domain.framework */; };
@@ -409,6 +414,11 @@
 		9C817B0129A2AA0300654E56 /* ApiUrlFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiUrlFactory.swift; sourceTree = "<group>"; };
 		9C817B0429A2B1F700654E56 /* AlamofireAdapterFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdapterFactory.swift; sourceTree = "<group>"; };
 		9C817B0829A2B32A00654E56 /* EmailValidatorAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidatorAdapter.swift; sourceTree = "<group>"; };
+		9C817B0B29A2D4E800654E56 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9C817B0D29A2DB0900654E56 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		9C817B0F29A2DB6200654E56 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		9C817B1229A2DC7800654E56 /* RoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
+		9C817B1429A2DE6C00654E56 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		9CE743262964F67C00C23CD1 /* Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CE7432D2964F67C00C23CD1 /* DataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CE743322964F67C00C23CD1 /* RemoteAddAccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAddAccountTests.swift; sourceTree = "<group>"; };
@@ -691,6 +701,8 @@
 		9C3F1DAE298DBE8400219B3C /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				9C817B1129A2DC4C00654E56 /* Components */,
+				9C817B0A29A2D4D200654E56 /* Resources */,
 				9C817A3D29967F2F00654E56 /* Helpers */,
 				9C817A372994256700654E56 /* Scenes */,
 			);
@@ -751,7 +763,9 @@
 			isa = PBXGroup;
 			children = (
 				9C817A3E29967F4C00654E56 /* UIViewControllerExtensions.swift */,
+				9C817B0D29A2DB0900654E56 /* UIColorExtension.swift */,
 				9C817A4029970D6700654E56 /* Storyboarded.swift */,
+				9C817B0F29A2DB6200654E56 /* Color.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -930,6 +944,23 @@
 				9C817AC6299AB9A000654E56 /* SignUpControllerFactory.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9C817B0A29A2D4D200654E56 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9C817B0B29A2D4E800654E56 /* Images.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9C817B1129A2DC4C00654E56 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				9C817B1229A2DC7800654E56 /* RoundedTextField.swift */,
+				9C817B1429A2DE6C00654E56 /* NavigationController.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		9CE742F92963B98D00C23CD1 = {
@@ -1576,6 +1607,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C3F1DCA298DDE2100219B3C /* SignUp.storyboard in Resources */,
+				9C817B0C29A2D4E800654E56 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1702,8 +1734,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C817A3F29967F4C00654E56 /* UIViewControllerExtensions.swift in Sources */,
+				9C817B1329A2DC7800654E56 /* RoundedTextField.swift in Sources */,
 				9C3F1DC8298DDDDA00219B3C /* SignUpViewController.swift in Sources */,
 				9C817A4129970D6700654E56 /* Storyboarded.swift in Sources */,
+				9C817B1029A2DB6200654E56 /* Color.swift in Sources */,
+				9C817B1529A2DE6C00654E56 /* NavigationController.swift in Sources */,
+				9C817B0E29A2DB0900654E56 /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
