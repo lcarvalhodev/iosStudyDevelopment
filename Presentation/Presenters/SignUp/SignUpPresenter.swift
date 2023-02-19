@@ -21,7 +21,7 @@ public final class SignUpPresenter {
         }
         else {
             loadingView.display(viewModel: LoadingViewModel(isLoading: true))
-            addAccount.add(addAccountModel: SignUpMapper.toAddAccountModel(viewModel: viewModel)) { [weak self] result in
+            addAccount.add(addAccountModel: viewModel.toAddAccountModel()) { [weak self] result in
                 guard let self = self else {return}
                 self.loadingView.display(viewModel: LoadingViewModel(isLoading: false))
                 switch result {
