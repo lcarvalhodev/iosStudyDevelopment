@@ -18,7 +18,7 @@ public final class MainQueueDispatchDecorator<T> {
 }
 
 extension MainQueueDispatchDecorator: AddAccount where T: AddAccount {
-    public func add(addAccountModel: Domain.AddAccountModel, completion: @escaping (Result<Domain.AccountModel, Domain.DomainError>) -> Void) {
+    public func add(addAccountModel: Domain.AddAccountModel, completion: @escaping (AddAccount.Result) -> Void) {
         instance.add(addAccountModel: addAccountModel){ [weak self] result in
             DispatchQueue.main.async {
                 self?.dispatch {
