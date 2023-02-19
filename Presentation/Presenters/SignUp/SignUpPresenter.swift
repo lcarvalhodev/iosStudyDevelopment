@@ -25,7 +25,13 @@ public final class SignUpPresenter {
                 guard let self = self else {return}
                 self.loadingView.display(viewModel: LoadingViewModel(isLoading: false))
                 switch result {
-                    case .failure: self.alertView.showMessage(viewModel: AlertViewModel(title: "Error", message: "Unexpected error. Try again."))
+                    case .failure(let error):
+                    var errorMessage: String!
+                    switch error{
+                    case .emailInUse: errorMessage = "Email already used."
+                    default: errorMessage = "Unexpected error. Try again."
+                    }
+                    self.alertView.showMessage(viewModel: AlertViewModel(title: "Error", message: errorMessage))
                     case .success: self.alertView.showMessage(viewModel: AlertViewModel(title: "Success", message: "Account created."))
                 }
             }
