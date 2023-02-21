@@ -33,6 +33,14 @@ final class RemoteAuthenticationTests: XCTestCase {
         })
     }
     
+    func test_auth_shoud_complete_with_account_if_client_completes_with_valid_data() {
+        let (sut, httpClientSpy) = makeSut()
+        let account = makeAccountModel()
+        expect(sut, completeWith: .success(account), when: {
+            httpClientSpy.completeWithData(account.toData()!)
+        })
+    }
+    
 }
 
 extension RemoteAuthenticationTests {

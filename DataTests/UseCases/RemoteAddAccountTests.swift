@@ -32,7 +32,7 @@ final class RemoteAddAccountTests: XCTestCase {
         })
     }
     
-    func test_add_shoud_complete_with_acount_if_client_completes_with_valid_data() {
+    func test_add_shoud_complete_with_account_if_client_completes_with_valid_data() {
         let (sut, httpClientSpy) = makeSut()
         let account = makeAccountModel()
         expect(sut, completeWith: .success(account), when: {
