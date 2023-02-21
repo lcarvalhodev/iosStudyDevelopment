@@ -1,10 +1,3 @@
-//
-//  AddAccountSpy.swift
-//  PresentationTests
-//
-//  Created by Leandro Almeida de Carvalho on 02/02/23.
-//
-
 import Foundation
 import Domain
 
