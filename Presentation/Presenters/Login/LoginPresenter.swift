@@ -28,7 +28,7 @@ public final class LoginPresenter {
                                    default: errorMessage = "Unexpected error. Try again."
                                }
                            self.alertView.showMessage(viewModel: AlertViewModel(title: "Error", message: errorMessage))
-                       case .success: break
+                       case .success: self.alertView.showMessage(viewModel: AlertViewModel(title: "Success", message: "Successfully Login."))
                 }
             }
         }
