@@ -21,7 +21,13 @@ public final class LoginPresenter {
             authentication.auth(authenticationModel: viewModel.toAuthenticationModelModel()) { [weak self] result in
                 guard let self = self else {return}
                    switch result {
-                       case .failure: self.alertView.showMessage(viewModel: AlertViewModel(title: "Error", message: "Unexpected error. Try again." ))
+                       case .failure(let error):
+                           var errorMessage: String!
+                               switch error{
+                                   case .expiredSession: errorMessage = "Email and/or password invalid."
+                                   default: errorMessage = "Unexpected error. Try again."
+                               }
+                           self.alertView.showMessage(viewModel: AlertViewModel(title: "Error", message: errorMessage))
                        case .success: break
                 }
             }
