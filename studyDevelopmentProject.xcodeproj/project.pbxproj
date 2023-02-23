@@ -125,6 +125,7 @@
 		9CFE229E29A4F551000C3431 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFE229D29A4F551000C3431 /* LoginViewModel.swift */; };
 		9CFE22A029A4F5DB000C3431 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFE229F29A4F5DB000C3431 /* LoginPresenter.swift */; };
 		9CFE22A229A4F8D4000C3431 /* AuthenticationSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFE22A129A4F8D4000C3431 /* AuthenticationSpy.swift */; };
+		9CFE22A529A797DC000C3431 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CFE22A429A797DC000C3431 /* Login.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -452,6 +453,7 @@
 		9CFE229D29A4F551000C3431 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		9CFE229F29A4F5DB000C3431 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		9CFE22A129A4F8D4000C3431 /* AuthenticationSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationSpy.swift; sourceTree = "<group>"; };
+		9CFE22A429A797DC000C3431 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -755,6 +757,7 @@
 		9C817A372994256700654E56 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				9CFE22A329A7979E000C3431 /* Login */,
 				9C817A352994248800654E56 /* SignUp */,
 			);
 			path = Scenes;
@@ -1172,6 +1175,14 @@
 			children = (
 				9CFE229D29A4F551000C3431 /* LoginViewModel.swift */,
 				9CFE229F29A4F5DB000C3431 /* LoginPresenter.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		9CFE22A329A7979E000C3431 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				9CFE22A429A797DC000C3431 /* Login.storyboard */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -1645,6 +1656,7 @@
 			files = (
 				9C3F1DCA298DDE2100219B3C /* SignUp.storyboard in Resources */,
 				9C817B0C29A2D4E800654E56 /* Images.xcassets in Resources */,
+				9CFE22A529A797DC000C3431 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
