@@ -33,7 +33,8 @@ extension SignUpViewControllerTests {
     func makeSut(signUpSpy: ((SignUpViewModel)-> Void)? = nil) -> SignUpViewController {
         let sut = SignUpViewController.instantiate()
         sut.signUp = signUpSpy
-        sut.loadViewIfNeeded ()
+        sut.loadViewIfNeeded()
+        checkMemoryLeak(for: sut)
         return sut
     }
 }

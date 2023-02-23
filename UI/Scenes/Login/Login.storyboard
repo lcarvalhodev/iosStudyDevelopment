@@ -89,8 +89,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="emailTextField" destination="V1i-9F-Lma" id="pRt-7V-Tg5"/>
                         <outlet property="loadingIndicator" destination="0XB-q3-HHW" id="2eT-JV-8fU"/>
-                        <outlet property="loginButton" destination="yvt-4M-aCu" id="ajw-q1-qZm"/>
+                        <outlet property="loginButton" destination="yvt-4M-aCu" id="KvA-15-BVH"/>
+                        <outlet property="passwordTextField" destination="Re7-Nj-JOW" id="fs9-NY-JtW"/>
                     </connections>
                 </viewController>
                 <customObject id="4C4-NX-QTt" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

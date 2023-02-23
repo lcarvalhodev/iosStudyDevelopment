@@ -98,6 +98,7 @@
 		9C817B1729A4406900654E56 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C817B1629A4406900654E56 /* Authentication.swift */; };
 		9C817B1929A4413700654E56 /* RemoteAuthenticationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C817B1829A4413700654E56 /* RemoteAuthenticationTests.swift */; };
 		9C817B1B29A4425300654E56 /* RemoteAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C817B1A29A4425300654E56 /* RemoteAuthentication.swift */; };
+		9C8EBCB529A822E900AD85C5 /* TextExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE743692970C5FA00C23CD1 /* TextExtensions.swift */; };
 		9CE7432E2964F67C00C23CD1 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CE743262964F67C00C23CD1 /* Data.framework */; };
 		9CE743332964F67C00C23CD1 /* RemoteAddAccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE743322964F67C00C23CD1 /* RemoteAddAccountTests.swift */; };
 		9CE7434D2964FA7F00C23CD1 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CE743462964FA7400C23CD1 /* Domain.framework */; };
@@ -1827,6 +1828,7 @@
 				9C817A3C2994261A00654E56 /* TestExtensions.swift in Sources */,
 				9C3F1DBA298DBE8400219B3C /* SignUpViewControllerTests.swift in Sources */,
 				9CFE22A829A79907000C3431 /* LoginViewControllerTests.swift in Sources */,
+				9C8EBCB529A822E900AD85C5 /* TextExtensions.swift in Sources */,
 				9C817A422997111C00654E56 /* Storyboarded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
