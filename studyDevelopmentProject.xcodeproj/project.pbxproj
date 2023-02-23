@@ -126,6 +126,8 @@
 		9CFE22A029A4F5DB000C3431 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFE229F29A4F5DB000C3431 /* LoginPresenter.swift */; };
 		9CFE22A229A4F8D4000C3431 /* AuthenticationSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFE22A129A4F8D4000C3431 /* AuthenticationSpy.swift */; };
 		9CFE22A529A797DC000C3431 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CFE22A429A797DC000C3431 /* Login.storyboard */; };
+		9CFE22A829A79907000C3431 /* LoginViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFE22A729A79907000C3431 /* LoginViewControllerTests.swift */; };
+		9CFE22AA29A79971000C3431 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFE22A929A79971000C3431 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -454,6 +456,8 @@
 		9CFE229F29A4F5DB000C3431 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		9CFE22A129A4F8D4000C3431 /* AuthenticationSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationSpy.swift; sourceTree = "<group>"; };
 		9CFE22A429A797DC000C3431 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		9CFE22A729A79907000C3431 /* LoginViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewControllerTests.swift; sourceTree = "<group>"; };
+		9CFE22A929A79971000C3431 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -766,6 +770,7 @@
 		9C817A39299425C800654E56 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				9CFE22A629A798F6000C3431 /* Login */,
 				9C817A362994249900654E56 /* SignUp */,
 			);
 			path = Scenes;
@@ -1182,7 +1187,16 @@
 		9CFE22A329A7979E000C3431 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				9CFE22A929A79971000C3431 /* LoginViewController.swift */,
 				9CFE22A429A797DC000C3431 /* Login.storyboard */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		9CFE22A629A798F6000C3431 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				9CFE22A729A79907000C3431 /* LoginViewControllerTests.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -1790,6 +1804,7 @@
 				9C817B1329A2DC7800654E56 /* RoundedTextField.swift in Sources */,
 				9C3F1DC8298DDDDA00219B3C /* SignUpViewController.swift in Sources */,
 				9C817A4129970D6700654E56 /* Storyboarded.swift in Sources */,
+				9CFE22AA29A79971000C3431 /* LoginViewController.swift in Sources */,
 				9C817B1029A2DB6200654E56 /* Color.swift in Sources */,
 				9C817B1529A2DE6C00654E56 /* NavigationController.swift in Sources */,
 				9C817B0E29A2DB0900654E56 /* UIColorExtension.swift in Sources */,
@@ -1803,6 +1818,7 @@
 				9C3F1DCB298EC4F500219B3C /* SignUpViewController.swift in Sources */,
 				9C817A3C2994261A00654E56 /* TestExtensions.swift in Sources */,
 				9C3F1DBA298DBE8400219B3C /* SignUpViewControllerTests.swift in Sources */,
+				9CFE22A829A79907000C3431 /* LoginViewControllerTests.swift in Sources */,
 				9C817A422997111C00654E56 /* Storyboarded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
