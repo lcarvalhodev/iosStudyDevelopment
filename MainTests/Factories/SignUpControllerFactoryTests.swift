@@ -4,7 +4,7 @@ import Presentation
 import UI
 import Validation
 
-final class SignUpComposerTests: XCTestCase {
+final class SignUpControllerFactoryTests: XCTestCase {
 
     func test_background_request_should_complete_on_main_thread() throws {
         let (sut, addAcountSpy) = makeSut()
@@ -29,7 +29,7 @@ final class SignUpComposerTests: XCTestCase {
     }
 }
 
-extension SignUpComposerTests {
+extension SignUpControllerFactoryTests {
     func makeSut(file: StaticString = #filePath, line: UInt = #line) -> (sut: SignUpViewController, addAccountSpy: AddAccountSpy){
         let addAcountSpy = AddAccountSpy()
         let sut = makeSignUpController(addAccount: MainQueueDispatchDecorator(addAcountSpy))
