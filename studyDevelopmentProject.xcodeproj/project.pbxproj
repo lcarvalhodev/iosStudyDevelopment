@@ -20,7 +20,7 @@
 		9C3F1D8F2986ABFB00219B3C /* AccountModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE743702970C6F800C23CD1 /* AccountModelFactory.swift */; };
 		9C3F1D902988947C00219B3C /* TextExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE743692970C5FA00C23CD1 /* TextExtensions.swift */; };
 		9C3F1D922989823D00219B3C /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3F1D912989823D00219B3C /* LoadingView.swift */; };
-		9C3F1D96298C75CE00219B3C /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3F1D95298C75CE00219B3C /* SignUpViewModel.swift */; };
+		9C3F1D96298C75CE00219B3C /* SignUpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3F1D95298C75CE00219B3C /* SignUpRequest.swift */; };
 		9C3F1D9C298C8CD400219B3C /* AlertViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3F1D9B298C8CD400219B3C /* AlertViewSpy.swift */; };
 		9C3F1DA2298C8D4F00219B3C /* AddAccountSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3F1DA1298C8D4F00219B3C /* AddAccountSpy.swift */; };
 		9C3F1DA4298C8EAF00219B3C /* LoadingViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3F1DA3298C8EAF00219B3C /* LoadingViewSpy.swift */; };
@@ -130,7 +130,7 @@
 		9CE74392297213F400C23CD1 /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE7436B2970C64C00C23CD1 /* TestFactories.swift */; };
 		9CE74395297215CE00C23CD1 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9CE74394297215CE00C23CD1 /* Alamofire */; };
 		9CFE229B29A4F42E000C3431 /* LoginPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFE229A29A4F42E000C3431 /* LoginPresenterTests.swift */; };
-		9CFE229E29A4F551000C3431 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFE229D29A4F551000C3431 /* LoginViewModel.swift */; };
+		9CFE229E29A4F551000C3431 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFE229D29A4F551000C3431 /* LoginRequest.swift */; };
 		9CFE22A029A4F5DB000C3431 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFE229F29A4F5DB000C3431 /* LoginPresenter.swift */; };
 		9CFE22A229A4F8D4000C3431 /* AuthenticationSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFE22A129A4F8D4000C3431 /* AuthenticationSpy.swift */; };
 		9CFE22A529A797DC000C3431 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CFE22A429A797DC000C3431 /* Login.storyboard */; };
@@ -389,7 +389,7 @@
 		9C3F1D88298344FA00219B3C /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		9C3F1D8D2984867B00219B3C /* EmailValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
 		9C3F1D912989823D00219B3C /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
-		9C3F1D95298C75CE00219B3C /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		9C3F1D95298C75CE00219B3C /* SignUpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRequest.swift; sourceTree = "<group>"; };
 		9C3F1D9B298C8CD400219B3C /* AlertViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewSpy.swift; sourceTree = "<group>"; };
 		9C3F1D9E298C8D1800219B3C /* EmailValidatorSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidatorSpy.swift; sourceTree = "<group>"; };
 		9C3F1DA1298C8D4F00219B3C /* AddAccountSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountSpy.swift; sourceTree = "<group>"; };
@@ -473,7 +473,7 @@
 		9CE7437E2972125900C23CD1 /* InfraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InfraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CE743832972125900C23CD1 /* AlamofireAdapterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdapterTests.swift; sourceTree = "<group>"; };
 		9CFE229A29A4F42E000C3431 /* LoginPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterTests.swift; sourceTree = "<group>"; };
-		9CFE229D29A4F551000C3431 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		9CFE229D29A4F551000C3431 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
 		9CFE229F29A4F5DB000C3431 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		9CFE22A129A4F8D4000C3431 /* AuthenticationSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationSpy.swift; sourceTree = "<group>"; };
 		9CFE22A429A797DC000C3431 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
@@ -695,7 +695,7 @@
 			isa = PBXGroup;
 			children = (
 				9C3F1D802983443100219B3C /* SignUpPresenter.swift */,
-				9C3F1D95298C75CE00219B3C /* SignUpViewModel.swift */,
+				9C3F1D95298C75CE00219B3C /* SignUpRequest.swift */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -1221,7 +1221,7 @@
 		9CFE229C29A4F53D000C3431 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				9CFE229D29A4F551000C3431 /* LoginViewModel.swift */,
+				9CFE229D29A4F551000C3431 /* LoginRequest.swift */,
 				9CFE229F29A4F5DB000C3431 /* LoginPresenter.swift */,
 			);
 			path = Login;
@@ -1817,8 +1817,8 @@
 				9C3F1D812983443100219B3C /* SignUpPresenter.swift in Sources */,
 				9C3F1D922989823D00219B3C /* LoadingView.swift in Sources */,
 				9CFE22A029A4F5DB000C3431 /* LoginPresenter.swift in Sources */,
-				9CFE229E29A4F551000C3431 /* LoginViewModel.swift in Sources */,
-				9C3F1D96298C75CE00219B3C /* SignUpViewModel.swift in Sources */,
+				9CFE229E29A4F551000C3431 /* LoginRequest.swift in Sources */,
+				9C3F1D96298C75CE00219B3C /* SignUpRequest.swift in Sources */,
 				9C3F1D89298344FA00219B3C /* AlertView.swift in Sources */,
 				9C817ADA299D0D1A00654E56 /* Validation.swift in Sources */,
 			);
