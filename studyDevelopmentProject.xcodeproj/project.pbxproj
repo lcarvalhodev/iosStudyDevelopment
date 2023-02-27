@@ -106,6 +106,7 @@
 		9C8EBCBF29AA9DE200AD85C5 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C8EBCBE29AA9DE200AD85C5 /* Welcome.storyboard */; };
 		9C8EBCC229ABDAD700AD85C5 /* WelcomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8EBCC129ABDAD700AD85C5 /* WelcomeViewControllerTests.swift */; };
 		9C8EBCC429ABDC3600AD85C5 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8EBCC329ABDC3600AD85C5 /* WelcomeViewController.swift */; };
+		9C8EBCC629AD751700AD85C5 /* WelcomeRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8EBCC529AD751700AD85C5 /* WelcomeRouterTests.swift */; };
 		9CE7432E2964F67C00C23CD1 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CE743262964F67C00C23CD1 /* Data.framework */; };
 		9CE743332964F67C00C23CD1 /* RemoteAddAccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE743322964F67C00C23CD1 /* RemoteAddAccountTests.swift */; };
 		9CE7434D2964FA7F00C23CD1 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CE743462964FA7400C23CD1 /* Domain.framework */; };
@@ -453,6 +454,7 @@
 		9C8EBCBE29AA9DE200AD85C5 /* Welcome.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 		9C8EBCC129ABDAD700AD85C5 /* WelcomeViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewControllerTests.swift; sourceTree = "<group>"; };
 		9C8EBCC329ABDC3600AD85C5 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		9C8EBCC529AD751700AD85C5 /* WelcomeRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeRouterTests.swift; sourceTree = "<group>"; };
 		9CE743262964F67C00C23CD1 /* Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CE7432D2964F67C00C23CD1 /* DataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CE743322964F67C00C23CD1 /* RemoteAddAccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAddAccountTests.swift; sourceTree = "<group>"; };
@@ -1027,6 +1029,7 @@
 			isa = PBXGroup;
 			children = (
 				9C8EBCC129ABDAD700AD85C5 /* WelcomeViewControllerTests.swift */,
+				9C8EBCC529AD751700AD85C5 /* WelcomeRouterTests.swift */,
 			);
 			path = Welcome;
 			sourceTree = "<group>";
@@ -1864,6 +1867,7 @@
 				9C3F1DCB298EC4F500219B3C /* SignUpViewController.swift in Sources */,
 				9C817A3C2994261A00654E56 /* TestExtensions.swift in Sources */,
 				9C3F1DBA298DBE8400219B3C /* SignUpViewControllerTests.swift in Sources */,
+				9C8EBCC629AD751700AD85C5 /* WelcomeRouterTests.swift in Sources */,
 				9CFE22A829A79907000C3431 /* LoginViewControllerTests.swift in Sources */,
 				9C8EBCB529A822E900AD85C5 /* TextExtensions.swift in Sources */,
 				9C8EBCC229ABDAD700AD85C5 /* WelcomeViewControllerTests.swift in Sources */,
