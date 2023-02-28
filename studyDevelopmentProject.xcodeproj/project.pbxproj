@@ -32,6 +32,7 @@
 		9C3F1DC8298DDDDA00219B3C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3F1DC7298DDDDA00219B3C /* SignUpViewController.swift */; };
 		9C3F1DCA298DDE2100219B3C /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C3F1DC9298DDE2100219B3C /* SignUp.storyboard */; };
 		9C3F1DCF298ECE1100219B3C /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C3F1DC9298DDE2100219B3C /* SignUp.storyboard */; };
+		9C75050429ADB3780057263A /* WelcomeControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C75050329ADB3780057263A /* WelcomeControllerFactory.swift */; };
 		9C817A3C2994261A00654E56 /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C817A3B2994261900654E56 /* TestExtensions.swift */; };
 		9C817A3F29967F4C00654E56 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C817A3E29967F4C00654E56 /* UIViewControllerExtensions.swift */; };
 		9C817A4129970D6700654E56 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C817A4029970D6700654E56 /* Storyboarded.swift */; };
@@ -401,6 +402,7 @@
 		9C3F1DB9298DBE8400219B3C /* SignUpViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewControllerTests.swift; sourceTree = "<group>"; };
 		9C3F1DC7298DDDDA00219B3C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		9C3F1DC9298DDE2100219B3C /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = SignUp.storyboard; path = UI/Scenes/SignUp/SignUp.storyboard; sourceTree = SOURCE_ROOT; };
+		9C75050329ADB3780057263A /* WelcomeControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeControllerFactory.swift; sourceTree = "<group>"; };
 		9C817A3B2994261900654E56 /* TestExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestExtensions.swift; sourceTree = "<group>"; };
 		9C817A3E29967F4C00654E56 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		9C817A4029970D6700654E56 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
@@ -996,6 +998,7 @@
 			children = (
 				9C817AC6299AB9A000654E56 /* SignUpControllerFactory.swift */,
 				9C8EBCBA29A933EF00AD85C5 /* LoginControllerFactory.swift */,
+				9C75050329ADB3780057263A /* WelcomeControllerFactory.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1912,6 +1915,7 @@
 				9C817B0929A2B32A00654E56 /* EmailValidatorAdapter.swift in Sources */,
 				9C817AC4299AB91A00654E56 /* RemoteAddAccountFactory.swift in Sources */,
 				9C817AD8299C10BD00654E56 /* MainQueueDispatchDecorator.swift in Sources */,
+				9C75050429ADB3780057263A /* WelcomeControllerFactory.swift in Sources */,
 				9C817AD3299BB52700654E56 /* Environment.swift in Sources */,
 				9C817B0229A2AA0300654E56 /* ApiUrlFactory.swift in Sources */,
 				9C8EBCB929A9339900AD85C5 /* RemoteAuthenticationFactory.swift in Sources */,
